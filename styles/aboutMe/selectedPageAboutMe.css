@@ -1,0 +1,7 @@
+.about-me-nav-item {
+  text-decoration: underline;
+}
+
+.home-page-nav-item, .my-services-nav-item, .contact-me-nav-item {
+  text-decoration: none;
+}
