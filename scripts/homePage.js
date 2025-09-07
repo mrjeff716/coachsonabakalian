@@ -33,6 +33,7 @@ function homePage() {
     document.querySelector('.js-first-quote-container').innerHTML = html
   }
 
+  renderHomePageQuotes()
   setInterval(() => {
     renderHomePageQuotes()
   }, 3800)

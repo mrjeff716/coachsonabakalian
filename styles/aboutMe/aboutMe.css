@@ -1,0 +1,81 @@
+body {
+  position: relative;
+  background-color: rgba(0,0,0,0.9);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+}
+
+.about-me-container {
+  background-image: url(../../images/images/pexels-pixabay-255464.jpg);
+  height: 100vh;
+  width: 100%;
+  margin-top: 90px;
+  margin-bottom: 50px;
+  background-size: cover;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me-content {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.coach-sona-image {
+  aspect-ratio: 3 / 4;
+  width: 35%;
+  height: 75%;
+}
+
+.about-me-text-container {
+  width: 20%;
+  height: 75%;
+}
+
+.about-me-text {
+  margin-top: 5px;
+  font-size: 1.25vw;
+  margin-left: 20px;
+}
+@media(max-width: 922px) {
+  .about-me-text-container {
+    width: 27%;
+  }
+  .about-me-text {
+    font-size: 1.5vw;
+  }
+}
+
+@media(max-width: 760px) {
+  .about-me-content {
+    flex-direction: column;
+    height: 80%;
+    width: 100%;
+  }
+  .coach-sona-image {
+    height: 90%;
+    width: 50%;
+  }
+  .about-me-text-container {
+    width: 96%;
+    align-self: start;
+  }
+  .about-me-text {
+    font-size: 70%;
+    margin-right: 10px;
+  }
+}
+
+@media(max-width: 670px) {
+
+}

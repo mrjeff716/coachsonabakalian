@@ -111,21 +111,28 @@ img.fullscreen {
 }
 
 .life-coaching-introduction-title {
-  font-size: 3vw;
+  font-size: 2.5vw;
   font-weight: bold;
   text-shadow: 0 0 10px rgba(223,223,233,0.55);
 }
 
 .life-coaching-introduction-description {
-  font-size: 2vw;
+  font-size: 1.5vw;
   margin-top: 10px;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 500;
+  margin-right: 5px;
+}
+
+@media(max-width: 1400px) {
+  .life-coaching-introduction-description {
+    font-size: 2vw;
+  }
 }
 
 @media(max-width: 1069px) {
   .life-coaching-introduction-description {
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
 }
 
