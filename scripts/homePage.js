@@ -1,4 +1,7 @@
+import { renderHeaders } from "./headers/headers.js";
+
 function homePage() {
+  renderHeaders()
 
   function renderHomePageQuotes() {
     let randomNumber = Math.random()

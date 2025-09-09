@@ -10,18 +10,36 @@ footer {
 }
 
 .about-me-container {
-  background-image: url(../../images/images/pexels-pixabay-255464.jpg);
+  position: relative;
   height: 100vh;
   width: 100%;
   margin-top: 90px;
   margin-bottom: 50px;
-  background-size: cover;
-
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden; /* prevents blur layer from spilling out */
 }
+
+.about-me-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../images/images/pexels-pixabay-255464.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px); /* blur effect */
+  transform: scale(1.1); /* avoids sharp edges from blur */
+  z-index: 0; /* keep it behind content */
+}
+
+.about-me-container > * {
+  z-index: 1; /* make sure content stays visible above blur */
+}
+
 
 .about-me-content {
   position: absolute;
@@ -29,17 +47,24 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: 90%;
 }
 
 .coach-sona-image {
   aspect-ratio: 3 / 4;
-  width: 35%;
-  height: 75%;
+  width: auto;
+  height: 65%;
 }
 
 .about-me-text-container {
-  width: 20%;
-  height: 75%;
+  width: 40%;
+  height: 65%;
+}
+
+.about-me-text-title {
+  font-size: 3.5vw;
+  font-weight: 300;
+  margin-left: 20px;
 }
 
 .about-me-text {
@@ -47,9 +72,9 @@ footer {
   font-size: 1.25vw;
   margin-left: 20px;
 }
-@media(max-width: 922px) {
+@media(max-width: 1050px) {
   .about-me-text-container {
-    width: 27%;
+    width: 35%;
   }
   .about-me-text {
     font-size: 1.5vw;
@@ -59,12 +84,12 @@ footer {
 @media(max-width: 760px) {
   .about-me-content {
     flex-direction: column;
-    height: 80%;
+    height: 90%;
     width: 100%;
   }
   .coach-sona-image {
-    height: 90%;
-    width: 50%;
+    height: 65%;
+    width: auto;
   }
   .about-me-text-container {
     width: 96%;
@@ -76,6 +101,17 @@ footer {
   }
 }
 
-@media(max-width: 670px) {
-
+@media(max-width: 575px) {
+  .coach-sona-image {
+    height: 40%;
+  }
+  .about-me-text-container {
+    overflow: auto;
+  }
+  .about-me-text-title {
+    font-size: 4vw; 
+  }
+  .about-me-text {
+    font-size: 85%;
+  }
 }

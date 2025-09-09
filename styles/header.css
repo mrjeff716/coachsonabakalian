@@ -9,7 +9,9 @@
   z-index: 1000;
 }
 
-.header-content {
+
+/*Default header*/
+.default-header-content {
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -78,6 +80,114 @@
 }
 
 .nav-item:hover {
-  filter: brightness(1.1) invert(1) drop-shadow(0 0 15px rgb(0, 0, 0));;
+  filter: brightness(1.1) invert(1) drop-shadow(0 0 15px rgb(0, 0, 0));
   transition: all 0.5s ease;
+}
+
+
+
+/*Hamburger menu*/
+.hamburger-menu {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hamburger-menu-icon-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-menu-icon {
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  filter: invert(1)
+}
+
+.hamburger-menu-page {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+}
+
+.hamburger-menu-page-header {
+  display: flex;
+  justify-content: space-between;
+  height: 10%;
+  align-items: center;
+}
+
+.close-icon {
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hamburger-menu-page-header p {
+  font-family:  "Libre Baskerville", serif;
+  color: black;
+}
+
+.hamburger-menu-page-options {
+  display: flex;
+  gap: 13vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburger-menu-page-option {
+  font-family: "Nunito Sans", sans-serif;
+  color: black;
+  font-size: 5vw;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hamburger-menu-page-option:hover {
+  transform: translateY(-3px);
+  transition: all 0.3s ease;
+  
+}
+
+/*
+.hamburger-menu-page-options a {
+  font-family: "Nunito Sans", sans-serif;
+  color: black;
+  font-size: 5vw;
+  font-weight: 300;
+}
+  */
+
+.hamburger-menu-page img {
+  width: 25px;
+  height: 25px;
+}
+
+
+@media(min-width: 787px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
+@media(max-width: 787px) {
+  .default-header-content {
+    display: none;
+  }
+}
+
+.hamburger-menu-page-removed {
+  display: none;
 }
