@@ -13,7 +13,7 @@ export function renderHeaders() {
               About me
             </a>
             <div class="nav-seperator"></div>
-            <a class="nav-item my-services-nav-item">
+            <a class="nav-item my-services-nav-item" href="services.html">
               My services
             </a>
             <a class="nav-item contact-me-nav-item">
@@ -43,7 +43,7 @@ export function renderHeaders() {
       <div class="hamburger-menu-page-options">
         <a class="hamburger-menu-page-option home-page-nav-item" href="homePage.html">Home</a>
         <a class="hamburger-menu-page-option about-me-nav-item" href="aboutMe.html">About me</a>
-        <a class="hamburger-menu-page-option my-services-nav-item">My services</a>
+        <a class="hamburger-menu-page-option my-services-nav-item" href="services.html">My services</a>
         <a class="hamburger-menu-page-option contact-me-nav-item">Contact me</a>
       </div>
     </div>

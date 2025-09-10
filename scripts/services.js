@@ -1,5 +1,5 @@
 import { renderHeaders } from "./headers/headers.js";
-function aboutMe() {
+function services() {
   renderHeaders()
-};
-aboutMe()
+}
+services()
