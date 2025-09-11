@@ -1,0 +1,220 @@
+.contact-me-container, .confirmation-message-container-modal {
+  width: 100%;
+  min-height: 100vh;
+  position: fixed;
+  z-index: 1700;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  height: 100%;
+}
+
+.contact-me-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(30px);
+  flex-wrap: wrap;
+  width: 50%;
+  height: 900%;
+}
+
+@media(max-width: 1053px) {
+  .contact-me-container form {
+    width: 65%;
+  }
+}
+@media(max-width: 819px) {
+  .contact-me-container form {
+    width: 70%;
+  }
+}
+@media(max-width: 750px) {
+  .contact-me-container form {
+    width: 75%;
+  }
+}
+@media(max-width: 707px) {
+  .contact-me-container form {
+    width: 85%;
+  }
+}
+@media(max-width: 619px) {
+  .contact-me-container form {
+    width: 90%;
+  }
+}
+@media(max-width: 587px) {
+  .contact-me-container form {
+    width: 100%;
+  }
+}
+@media(max-width: 523px) {
+  .form-container {
+    width: 80%;
+  }
+  .contact-me-container form {
+    width: 100%;
+  }
+}
+@media(max-width: 460px) {
+  .form-container {
+    width: 90%;
+  }
+  .contact-me-container form {
+    width: 100%;
+  }
+}
+@media(max-width: 409px) {
+  .form-container {
+    width: 95%;
+  }
+  .contact-me-container form {
+    width: 100%;
+  }
+}
+
+.contact-me-container form h1 {
+  color: #fff;
+  font-weight: 700;
+  line-height: 2;
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.close-contact-form {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.close-contact-form:hover {
+  color: #ff5555;
+  transition: all 0.3s ease;
+}
+
+.contact-me-container form input {
+  width: 70%;
+  height: 40%;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  font-size: 1.25rem;
+  margin-bottom: 25px;
+  background: none;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+}
+
+.contact-me-container form input::placeholder {
+  color: #fff;
+}
+
+.contact-me-container form textarea {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  font-weight: 200;
+  font-size: 1.25rem;
+  padding: 10px;
+  outline: none;
+  height: 70%;
+  width: 65%;
+  resize: none;
+}
+
+.contact-me-container form textarea::placeholder {
+  color: #fff;
+  font-weight: 300;
+}
+
+.contact-me-container form h4 {
+  font-size: 1.5rem
+}
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.contact-me-container .send-button {
+  border: none;
+  background: #fff;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #000;
+  width: 50%;
+  text-align: center;
+  height: 30%;
+  padding: 0;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.contact-me-container form .send-button:hover {
+  filter: invert(1);
+  transition: all 0.4s ease-in-out;
+}
+
+.confirmation-message-container {
+  width: 40%;
+  min-height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  background-color: rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
+}
+
+@media(max-width: 777px) {
+  .confirmation-message-container {
+    width: 60%;
+  }
+}
+@media(max-width: 548px) {
+  .confirmation-message-container {
+    width: 70%;
+  }
+}
+@media(max-width: 474px) {
+  .confirmation-message-container {
+    width: 80%;
+  }
+}
+@media(max-width: 396px) {
+  .confirmation-message-container {
+    width: 97%;
+  }
+}
+
+.confirmation-message {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.form-removed {
+  display: none;
+}

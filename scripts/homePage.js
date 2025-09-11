@@ -1,7 +1,12 @@
 import { renderHeaders } from "./headers/headers.js";
+import { contactMe, sendMail } from "./contactMe/contactMe.js";
 
 function homePage() {
   renderHeaders()
+  contactMe()
+  document.querySelector('.js-send-button').addEventListener('click', async() => {
+      await sendMail()
+    })
 
   function renderHomePageQuotes() {
     let randomNumber = Math.random()

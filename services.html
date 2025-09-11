@@ -3,19 +3,30 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Life Coach Sona | About Me</title>
+    <title>Life Coach Sona | Services</title>
     <link rel="icon" type="image/png" href=images/logo/coachSonaBakalianLogo-cropped-1.jpg>
     <link rel="stylesheet" href="styles/services/services.css">
     <link rel="stylesheet" href="styles/services/selectedPageServices.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/services/servicesFooter.css">
+    <link rel="stylesheet" href="styles/contactMe/contactMe.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+  (function(){
+      emailjs.init({
+        publicKey: "UxooDdj-MUzreiXFS",
+      });
+  })();
+</script>
 
   </head>
   <body>
@@ -42,7 +53,7 @@
 
         <div class="service">
       <div class=services-image-container>
-    <img src="images/images/services/pexels-jeshoots-com-147458-714701.jpg">
+    <img src="images/images/services/pexels-jeshoots-com-147458-714701.jpg" loading="eager">
     </div>
     <div class="service-text">
       <p class="service-title">Time Management</p>
@@ -53,7 +64,7 @@
 
     <div class="service">
       <div class=services-image-container>
-    <img src="images/images/services/pexels-henri-mathieu-8348468.jpg">
+    <img src="images/images/services/pexels-henri-mathieu-8348468.jpg" loading="eager">
     </div>
     <p class="service-title">Move with confidence</p>
       <p class="service-description">Life is full of challenges, by adopting a positive mindset we can navigate every challenge by confidence and become resilient.</p>
@@ -61,15 +72,15 @@
 
     <div class="service">
       <div class=services-image-container>
-    <img src="images/images/services/pexels-enginakyurt-1552617.jpg">
+    <img src="images/images/services/pexels-enginakyurt-1552617.jpg" loading="eager">
     </div>
     <p class="service-title">Setting smart goals</p>
-      <p class="service-description">by setting smart goals, you will specify measurable, attainable, realistic, and timely goals that will keep you focused on your path and lead a desirable life by overcoming obstacles.</p>
+      <p class="service-description">By setting smart goals, you will specify measurable, attainable, realistic, and timely goals that will keep you focused on your path and lead a desirable life by overcoming obstacles.</p>
     </div>
 
     <div class="service">
       <div class=services-image-container>
-    <img src="images/images/services/pexels-leandro-boogalu-5876-1390403.jpg">
+    <img src="images/images/services/pexels-leandro-boogalu-5876-1390403.jpg" loading="eager">
     </div>
     <p class="service-title">Stay disciplined</p>
       <p class="service-description">As your life coach, I will help you build discipline by adopting consistant habits crucial for long term success.</p>
@@ -77,7 +88,7 @@
 
   <div class="service">
       <div class=services-image-container>
-    <img src="images/images/services/pexels-prasanthinturi-1051838.jpg">
+    <img src="images/images/services/pexels-prasanthinturi-1051838.jpg" loading="eager">
     </div>
     <p class="service-title">Stress management</p>
       <p class="service-description">By reducing anxiety levels, you'll regain control, enhance your emotional well being, and stay focused.</p>
@@ -85,7 +96,7 @@
 
   <div class="service">
       <div class=services-image-container>
-    <img src="images/images/services/pexels-davyd-bortnik-1578556-3058762.jpg">
+    <img src="images/images/services/pexels-davyd-bortnik-1578556-3058762.jpg" loading="eager">
     </div>
     <p class="service-title">Personal development</p>
       <p class="service-description">Together we can work on unleashing your higher self in order to achieve your full potentian in life.</p>
@@ -97,6 +108,10 @@
 
     </main>
 
+    <div class="contact-me-container js-contact-me-container"></div>
+    <div class="confirmation-message-container-modal js-confirmation-message-container-modal"></div>
+  
+
     <footer>
       <div class="footer-content">
       <div class="footer-text">
@@ -105,7 +120,7 @@
         Stay tuned for fresh insights, tips, and updates. connect with me on social media today!
       </p>
       <a class="footer-instagram-link" href="https://www.instagram.com/coachsonabakalian/" target="_blank">
-          <img class="instagram-icon" src="images/icons/instagram.svg">
+          <img class="instagram-icon" src="images/icons/instagram.svg" loading="lazy">
       </a>
     </div>
   </div>

@@ -67,7 +67,7 @@ main {
 }
 
 .service {
-  flex: 0 0 auto;             /* prevent growing and shrinking and keeps the width 450px */
+  flex: 0 0 auto;             /* prevent growing and shrinking and keeps the width a set */
   width: 450px;               /* fixed/min width for each service card */
 }
 

@@ -10,12 +10,23 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/contactMe/contactMe.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+  (function(){
+      emailjs.init({
+        publicKey: "UxooDdj-MUzreiXFS",
+      });
+  })();
+</script>
 
   </head>
   <body>
@@ -35,7 +46,7 @@
         
 
         <div class="about-me-content">
-        <img class="coach-sona-image" src="images/images/IMG_4750.jpg">
+        <img class="coach-sona-image" src="images/images/IMG_4750.jpg" loading="eager">
         <div class="about-me-text-container">
           <p class="about-me-text-title">Who am I?</p>
           <p class="about-me-text">
@@ -58,6 +69,9 @@
     
     </main>
 
+    <div class="contact-me-container js-contact-me-container"></div>
+    <div class="confirmation-message-container-modal js-confirmation-message-container-modal"></div>
+
     <footer>
       <div class="footer-content">
       <div class="footer-text">
@@ -66,7 +80,7 @@
         Stay tuned for fresh insights, tips, and updates. connect with me on social media today!
       </p>
       <a class="footer-instagram-link" href="https://www.instagram.com/coachsonabakalian/" target="_blank">
-          <img class="instagram-icon" src="images/icons/instagram.svg">
+          <img class="instagram-icon" src="images/icons/instagram.svg" loading="lazy">
       </a>
     </div>
   </div>

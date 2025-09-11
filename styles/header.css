@@ -61,6 +61,17 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
+.contact-me-nav-item {
+  background-color: black;
+  height: 60%;
+  
+  align-self: center;
+  border-radius: 120px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 @media(max-width:575px) {
   .nav-item {
     font-size: 20px;
@@ -157,6 +168,12 @@
   transition: all 0.3s ease;
 }
 
+.hamburger-menu-page-option-contact-me-nav-item {
+  color: white;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
 .hamburger-menu-page-option:hover {
   transform: translateY(-3px);
   transition: all 0.3s ease;
@@ -178,12 +195,12 @@
 }
 
 
-@media(min-width: 787px) {
+@media(min-width: 814px) {
   .hamburger-menu {
     display: none;
   }
 }
-@media(max-width: 787px) {
+@media(max-width: 814px) {
   .default-header-content {
     display: none;
   }

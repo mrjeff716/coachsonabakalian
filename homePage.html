@@ -10,12 +10,23 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/contactMe/contactMe.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+  (function(){
+      emailjs.init({
+        publicKey: "UxooDdj-MUzreiXFS",
+      });
+  })();
+</script>
 
   </head>
   <body>
@@ -33,19 +44,19 @@
     <main>
 
       <div class="first-quote-and-image-container">
-        <img class="first-quote-image" src="images/images/pexels-romanp-15382.jpg">
+        <img class="first-quote-image" src="images/images/pexels-romanp-15382.jpg" loading="eager">
         <div class="first-quote-container js-first-quote-container">
       </div>
-        <img class="coach-sona-img" src="images/images/WhatsApp Image 2025-09-03 at 9.40.31 PM.jpeg">
+        <img class="coach-sona-img" src="images/images/WhatsApp Image 2025-09-03 at 9.40.31 PM.jpeg" loading="eager">
       </div>
 
       <div class="life-coaching-introduction-container">
-        <img class="logo" src="images/logo/coachSonaBakalianLogo-cropped-1.jpg">
-        <img class="life-coaching-introduction-image" src="images/images/pexels-ninauhlikova-725255.jpg">
+        <img class="logo" src="images/logo/coachSonaBakalianLogo-cropped-1.jpg" loading="lazy">
+        <img class="life-coaching-introduction-image" src="images/images/pexels-ninauhlikova-725255.jpg" loading="lazy">
         <div class="life-coaching-introduction-text">
         <p class="life-coaching-introduction-title">What is Life Coaching?</p>
         <p class="life-coaching-introduction-description">
-          Life coaching is a collaborative and goal-focused process in which a trained professional—called a life coach—supports individuals in identifying and achieving personal or professional goals, enhancing self-awareness, and creating meaningful change in their lives. <details class="life-coaching-introduction-description">
+          Life coaching is a collaborative and goal-focused process in which a trained professional called a life coach supports individuals in identifying and achieving personal or professional goals, enhancing self-awareness, and creating meaningful change in their lives. <details class="life-coaching-introduction-description">
             <summary class="life-coaching-introduction-description">More info</summary>
             Unlike therapy, which often addresses emotional healing and mental health challenges rooted in the past, life coaching is future-oriented and centers on growth, action, and accountability. A life coach works with clients to clarify their vision, overcome limiting beliefs or habits, and develop concrete strategies for improvement in areas such as career, relationships, confidence, health, and overall life balance. While life coaches are not licensed therapists or medical professionals, their role is to serve as a motivational partner who empowers clients to unlock their potential and live with greater intention, purpose, and fulfillment.</details>
         </p>
@@ -54,7 +65,7 @@
 
       <div class="purpose-of-life-coaching-container">
         <div class="purpose-of-life-coaching-content">
-          <img class="purpose-of-life-coaching-image" src="images/images/pexels-toulouse-10807430.jpg">
+          <img class="purpose-of-life-coaching-image" src="images/images/pexels-toulouse-10807430.jpg" loading="lazy">
           <p class="purpose-of-life-coaching-text">
           The purpose of life coaching is to help individuals gain clarity about their goals, overcome obstacles, and create actionable plans to achieve personal or professional growth. A life coach provides support, accountability, and perspective, guiding clients through transitions, challenges, or periods of self-discovery.
         </p>
@@ -62,6 +73,9 @@
       </div>
 
     </main>
+
+    <div class="contact-me-container js-contact-me-container"></div>
+    <div class="confirmation-message-container-modal js-confirmation-message-container-modal"></div>
 
     <footer>
       <div class="footer-content">
@@ -71,7 +85,7 @@
         Stay tuned for fresh insights, tips, and updates. connect with me on social media today!
       </p>
       <a class="footer-instagram-link" href="https://www.instagram.com/coachsonabakalian/" target="_blank">
-          <img class="instagram-icon" src="images/icons/instagram.svg">
+          <img class="instagram-icon" src="images/icons/instagram.svg" loading="lazy">
       </a>
     </div>
   </div>
