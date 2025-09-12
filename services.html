@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
@@ -42,7 +43,7 @@
     </header>
     
     <main>
-      <div class="title-container">
+      <div class="title-container" data-aos="fade-down">
       <p class="title">Here are the services I provide as a life coach</p>
       <p class="title">who strives towards helping and improving</p>
       <p class="title">the quality of life of her clients</p>
@@ -51,7 +52,7 @@
       <div class="services-container">
         <div class="services-grid">
 
-        <div class="service">
+        <div class="service" data-aos="fade-up">
       <div class=services-image-container>
     <img src="images/images/services/pexels-jeshoots-com-147458-714701.jpg" loading="eager">
     </div>
@@ -62,7 +63,7 @@
     </div>
   </div>
 
-    <div class="service">
+    <div class="service" data-aos="fade-down">
       <div class=services-image-container>
     <img src="images/images/services/pexels-henri-mathieu-8348468.jpg" loading="eager">
     </div>
@@ -70,7 +71,7 @@
       <p class="service-description">Life is full of challenges, by adopting a positive mindset we can navigate every challenge by confidence and become resilient.</p>
   </div>
 
-    <div class="service">
+    <div class="service" data-aos="fade-up">
       <div class=services-image-container>
     <img src="images/images/services/pexels-enginakyurt-1552617.jpg" loading="eager">
     </div>
@@ -78,7 +79,7 @@
       <p class="service-description">By setting smart goals, you will specify measurable, attainable, realistic, and timely goals that will keep you focused on your path and lead a desirable life by overcoming obstacles.</p>
     </div>
 
-    <div class="service">
+    <div class="service" data-aos="fade-down">
       <div class=services-image-container>
     <img src="images/images/services/pexels-leandro-boogalu-5876-1390403.jpg" loading="eager">
     </div>
@@ -86,7 +87,7 @@
       <p class="service-description">As your life coach, I will help you build discipline by adopting consistant habits crucial for long term success.</p>
   </div>
 
-  <div class="service">
+  <div class="service" data-aos="fade-up">
       <div class=services-image-container>
     <img src="images/images/services/pexels-prasanthinturi-1051838.jpg" loading="eager">
     </div>
@@ -94,7 +95,7 @@
       <p class="service-description">By reducing anxiety levels, you'll regain control, enhance your emotional well being, and stay focused.</p>
   </div>
 
-  <div class="service">
+  <div class="service" data-aos="fade-down">
       <div class=services-image-container>
     <img src="images/images/services/pexels-davyd-bortnik-1578556-3058762.jpg" loading="eager">
     </div>
@@ -127,5 +128,12 @@
     </footer>
 
     <script src="scripts/services.js" type="module"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({
+      offset: 200,
+      duration: 1900,
+    });
+  </script>
   </body>
 </html>

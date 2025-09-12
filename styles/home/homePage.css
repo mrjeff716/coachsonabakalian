@@ -1,4 +1,4 @@
-main {
+ main {
   width: 100%;
   overflow: hidden;
 }
@@ -79,13 +79,14 @@ img.fullscreen {
   margin-right: 20px;
   padding-top: 6px;
   display: flex;
-  border-top: 3px solid white;
   position: relative;
+  background: rgb(94, 94, 94);
+  box-shadow: 0 0 10px rgba(0,0,0,0.7)
 }
 
 .logo {
   position: absolute;
-  bottom: -150px;
+  bottom: -120px;
   right: 2px;
   width: 150px;
   height: 150px;

@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
@@ -41,24 +42,24 @@
       
     </header>
     
-    <main>
+    <main data-aos="fade-in">
       <div class="about-me-container">
         
 
         <div class="about-me-content">
-        <img class="coach-sona-image" src="images/images/IMG_4750.jpg" loading="eager">
+        <img class="coach-sona-image" src="images/images/IMG_4750.jpg" loading="eager" data-aos="fade-right">
         <div class="about-me-text-container">
-          <p class="about-me-text-title">Who am I?</p>
-          <p class="about-me-text">
+          <p class="about-me-text-title" data-aos="fade-down" data-aos-offset="20">Who am I?</p>
+          <p class="about-me-text" data-aos="fade-left">
             I’m a proud mom of two and deeply passionate about life coaching. My journey into coaching began as a personal transition, a way to find clarity and purpose while balancing motherhood.
           </p>
-          <p class="about-me-text">
+          <p class="about-me-text" data-aos="fade-right" data-aos-offset="20">
             Through that experience, I discovered how powerful coaching can be in creating real, lasting change. I took the course not just to grow personally, but to gain the tools to guide others on their own paths. 
           </p>
-          <p class="about-me-text">
+          <p class="about-me-text" data-aos="fade-left" data-aos-offset="20">
             Now, I’m committed to helping clients find direction, build confidence, and step into their best selves. Every session I hold is grounded in empathy, understanding, and practical strategies. Being a mom has taught me patience and resilience, which I bring into my coaching practice.
           </p>
-          <p class="about-me-text">
+          <p class="about-me-text" data-aos="fade-right" data-aos-offset="20">
             I believe everyone has untapped potential waiting to be unlocked. Supporting others in their growth journey is more than work,it’s my calling. I’m here to empower and uplift, one conversation at a time.
           </p>
         </div>
@@ -87,5 +88,12 @@
     </footer>
 
     <script src="scripts/aboutMe.js" type="module"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 200,
+      duration: 1500
+    });
+  </script>
   </body>
 </html>
