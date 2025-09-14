@@ -1,71 +1,78 @@
 export function renderHeaders() {
+  // Determine current page folder
+  const currentPath = window.location.pathname; // e.g. "/aboutMe/index.html"
+  let prefix = ""; // default for homepage
+
+  if (currentPath.includes("/aboutMe/") || currentPath.includes("/services/")) {
+    prefix = "../"; // go up one folder for subpages
+  }
+
+  // ----------------- Default Header -----------------
   function renderDefaultHeader() {
     let html = `
-  <div class="header-left">
-          <p class="header-left-text">Coach Sona Bakalian</p>
-        </div>
-        <div class="header-right">
-          <nav class="nav-menu">
-            <a class="nav-item home-page-nav-item" title="Go back to the home page" href="/index.html">
-              Home
-            </a>
-            <a class="nav-item about-me-nav-item" href="/aboutMe/">
-              About me
-            </a>
-            <div class="nav-seperator"></div>
-            <a class="nav-item my-services-nav-item" href="/services/">
-              My services
-            </a>
-            <a class="nav-item contact-me-nav-item js-contact-me-nav-item">
-              Contact me
-            </a>
-          </nav>
-        </div>
-  `
-  document.querySelector('.js-default-header-content').innerHTML = html
-  };
-  renderDefaultHeader()
+      <div class="header-left">
+        <p class="header-left-text">Coach Sona Bakalian</p>
+      </div>
+      <div class="header-right">
+        <nav class="nav-menu">
+          <a class="nav-item home-page-nav-item" title="Go back to the home page" href="${prefix}index.html">
+            Home
+          </a>
+          <a class="nav-item about-me-nav-item" href="${prefix}aboutMe/">
+            About me
+          </a>
+          <div class="nav-seperator"></div>
+          <a class="nav-item my-services-nav-item" href="${prefix}services/">
+            My services
+          </a>
+          <a class="nav-item contact-me-nav-item js-contact-me-nav-item">
+            Contact me
+          </a>
+        </nav>
+      </div>
+    `;
+    document.querySelector('.js-default-header-content').innerHTML = html;
+  }
+  renderDefaultHeader();
 
-
+  // ----------------- Hamburger Menu -----------------
   function renderHamburgerMenu() {
     let html = `
-            <div class="header-left">
-          <p class="header-left-text">Coach Sona Bakalian</p>
-        </div>
-        <div class="hamburger-menu-icon-container">
-        <img class="hamburger-menu-icon js-hamburger-menu-icon" src="/images/icons/align-left (1).svg">
+      <div class="header-left">
+        <p class="header-left-text">Coach Sona Bakalian</p>
+      </div>
+      <div class="hamburger-menu-icon-container">
+        <img class="hamburger-menu-icon js-hamburger-menu-icon" src="${prefix}images/icons/align-left (1).svg">
       </div>
       <div class="hamburger-menu-page js-hamburger-menu-page">
         <div class="hamburger-menu-page-header">
-        <p class="header-left-text">Coach Sona Bakalian</p>
-        <img class="close-icon js-close-icon" src="images/icons/cross.svg">
+          <p class="header-left-text">Coach Sona Bakalian</p>
+          <img class="close-icon js-close-icon" src="${prefix}images/icons/cross.svg">
+        </div>
+        <div class="hamburger-menu-page-options">
+          <a class="hamburger-menu-page-option home-page-nav-item" href="${prefix}index.html">Home</a>
+          <a class="hamburger-menu-page-option about-me-nav-item" href="${prefix}aboutMe/">About me</a>
+          <a class="hamburger-menu-page-option my-services-nav-item" href="${prefix}services/">My services</a>
+          <a class="hamburger-menu-page-option contact-me-nav-item hamburger-menu-page-option-contact-me-nav-item js-contact-me-nav-item">Contact me</a>
+        </div>
       </div>
-      <div class="hamburger-menu-page-options">
-        <a class="hamburger-menu-page-option home-page-nav-item" href="/index.html">Home</a>
-        <a class="hamburger-menu-page-option about-me-nav-item" href="/aboutMe/">About me</a>
-        <a class="hamburger-menu-page-option my-services-nav-item" href="/services/">My services</a>
-        <a class="hamburger-menu-page-option contact-me-nav-item hamburger-menu-page-option-contact-me-nav-item js-contact-me-nav-item">Contact me</a>
-      </div>
-    </div>
-    `
+    `;
     document.querySelector('.js-hamburger-menu').innerHTML = html;
 
-    const hamburgerMenuIcon = document.querySelector('.js-hamburger-menu-icon')
-    const closeIcon = document.querySelector('.js-close-icon')
-    const hamburgerMenuPage = document.querySelector('.js-hamburger-menu-page')
+    const hamburgerMenuIcon = document.querySelector('.js-hamburger-menu-icon');
+    const closeIcon = document.querySelector('.js-close-icon');
+    const hamburgerMenuPage = document.querySelector('.js-hamburger-menu-page');
 
-    hamburgerMenuPage.style.display = "none"
+    hamburgerMenuPage.style.display = "none";
 
     hamburgerMenuIcon.addEventListener('click', () => {
-      hamburgerMenuPage.style.display = "initial"
-    })
+      hamburgerMenuPage.style.display = "initial";
+    });
     closeIcon.addEventListener('click', () => {
-      hamburgerMenuPage.style.display = "none"
-    })
-    
-  };
-  renderHamburgerMenu()
-  
+      hamburgerMenuPage.style.display = "none";
+    });
+  }
+  renderHamburgerMenu();
+}
 
-};
-renderHeaders()
+renderHeaders();
