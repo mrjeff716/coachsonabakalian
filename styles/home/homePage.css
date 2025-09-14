@@ -103,8 +103,7 @@ img.fullscreen {
 .life-coaching-introduction-image {
   aspect-ratio: 4 / 3;
   width: 50%;
-  height: auto;
-  max-height: 500px;
+  height: 70vh;
   box-shadow: 0 0 45px rgba(0,0,0,1)
 }
 

@@ -51,6 +51,7 @@ export function contactMe() {
 contactMe()
 
 export async function sendMail() {
+  
     let parms = {
       //getElementById isnt like queryselector that uses '.' instead
       //its only ''
