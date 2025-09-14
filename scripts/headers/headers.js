@@ -6,7 +6,7 @@ export function renderHeaders() {
         </div>
         <div class="header-right">
           <nav class="nav-menu">
-            <a class="nav-item home-page-nav-item" title="Go back to the home page" href="../index.html">
+            <a class="nav-item home-page-nav-item" title="Go back to the home page" href="/index.html">
               Home
             </a>
             <a class="nav-item about-me-nav-item" href="/aboutMe/">
@@ -33,7 +33,7 @@ export function renderHeaders() {
           <p class="header-left-text">Coach Sona Bakalian</p>
         </div>
         <div class="hamburger-menu-icon-container">
-        <img class="hamburger-menu-icon js-hamburger-menu-icon" src="../images/icons/align-left (1).svg">
+        <img class="hamburger-menu-icon js-hamburger-menu-icon" src="/images/icons/align-left (1).svg">
       </div>
       <div class="hamburger-menu-page js-hamburger-menu-page">
         <div class="hamburger-menu-page-header">
