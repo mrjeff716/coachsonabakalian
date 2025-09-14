@@ -50,7 +50,7 @@ main {
 .services-grid {
   display: flex;              /* line them up in a row */
   flex-wrap: nowrap;          /* no wrapping */
-  overflow-x: auto;           /* horizontal scroll if needed */
+  overflow-x:initial;           /* horizontal scroll if needed */
   overflow-y: hidden;         /* prevent vertical scroll */
   width: max-content;
   height: auto;               /* remove the 100vh, let content decide */

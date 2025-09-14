@@ -137,6 +137,12 @@ img.fullscreen {
   }
 }
 
+@media(max-width: 920px) {
+  .life-coaching-introduction-image {
+    width: 60%;
+  }
+}
+
 @media(max-width: 701px) {
   .life-coaching-introduction-container {
     flex-direction: column;
@@ -155,6 +161,12 @@ img.fullscreen {
   .life-coaching-introduction-description {
     line-height: 2;
     font-size: 4vw;
+  }
+}
+
+@media(max-width: 600px) {
+  .life-coaching-introduction-image {
+    height: 300px;
   }
 }
 
