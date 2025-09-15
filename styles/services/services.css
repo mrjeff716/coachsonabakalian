@@ -66,6 +66,25 @@ main {
   scrollbar-color: #888 #eee;             /* thumb | track */
 }
 
+.services-grid::-webkit-scrollbar {
+  height: 8px;
+}
+
+.services-container::-webkit-scrollbar-track {
+  background: #e6e6e6;
+  border-radius: 10px;
+}
+
+.services-container::-webkit-scrollbar-thumb {
+  background: #939393;
+  border-radius: 10px;
+}
+
+.services-container::-webkit-scrollbar-thumb:hover {
+  background: #bdbdbd;
+  border-radius: 10px;
+}
+
 .service {
   flex: 0 0 auto;             /* prevent growing and shrinking and keeps the width a set */
   width: 450px;               /* fixed/min width for each service card */
@@ -97,4 +116,38 @@ main {
 .service-description {
   font-size: 100%;
   font-weight: 300;
+}
+
+@media(max-width: 725px) {
+  .services-grid {
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thick;                  /* "auto" | "thin" | "none" */
+    scrollbar-color: #888 #eee;             /* thumb | track */
+  }
+}
+
+@media(max-width: 426px) {
+  .service-text {
+    width: 90%;
+  }
+  .service-title {
+    font-size: 1.5rem;
+  }
+  .service-description {
+    font-size: 0.8rem;
+  }
+}
+
+@media(max-width: 406px) {
+  .service-text {
+    width: 70%;
+  }
+  .service-title {
+    font-size: 1.5rem;
+  }
+  .service-description {
+    font-size: 0.7rem;
+  }
 }
