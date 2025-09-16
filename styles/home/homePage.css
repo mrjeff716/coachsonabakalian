@@ -109,8 +109,10 @@ img.fullscreen {
 
 .life-coaching-introduction-image {
   aspect-ratio: 4 / 3;
-  width: 50%;
-  height: 70vh;
+  width: auto;
+  height: auto;
+  max-width: 50%;
+  max-height: 70vh;
   box-shadow: 0 0 45px rgba(0,0,0,1)
 }
 
@@ -146,7 +148,10 @@ img.fullscreen {
 
 @media(max-width: 920px) {
   .life-coaching-introduction-image {
-    width: 60%;
+    width: auto;
+    height: auto;
+    max-width: 60%;
+    max-height: 75%;
   }
 }
 
@@ -155,8 +160,10 @@ img.fullscreen {
     flex-direction: column;
   }
   .life-coaching-introduction-image {
-    width: 100%;
-    height: 450px;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 550px;
   }
   .life-coaching-introduction-text {
     margin-left: 5px;
@@ -176,8 +183,8 @@ img.fullscreen {
     flex-direction: column;
   }
   .life-coaching-introduction-image {
-    width: 100%;
-    height: 400px;
+    width: auto;
+    height: auto;
   }
   .life-coaching-introduction-text {
     margin-left: 5px;
@@ -194,7 +201,9 @@ img.fullscreen {
 
 @media(max-width: 600px) {
   .life-coaching-introduction-image {
-    height: 300px;
+    width: auto;
+    height: auto;
+    max-height: 380px;
   }
   .logo {
     width: 120px;
@@ -203,9 +212,19 @@ img.fullscreen {
   }
 }
 
-@media(max-width: 300px) {
+@media(max-width: 500px) {
   .life-coaching-introduction-image {
-    height: 250px;
+    width: auto;
+    height: auto;
+    max-height: 315px;
+  }
+}
+
+@media(max-width: 390px) {
+  .life-coaching-introduction-image {
+    width: auto;
+    height: auto;
+    max-height: 230px;
   }
 }
 
