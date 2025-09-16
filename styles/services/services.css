@@ -128,7 +128,7 @@ main {
   }
 }
 
-@media(max-width: 426px) {
+@media(max-width: 456px) {
   .service-text {
     width: 90%;
   }
